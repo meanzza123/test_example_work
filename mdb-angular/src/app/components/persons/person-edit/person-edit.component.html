@@ -1,0 +1,33 @@
+<div class="container custom-container">
+    <div class="col-md-12">
+      
+      <h3 class="mb-3 text-center">Edit Page</h3>
+  
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroup-sizing-default">Enter Your Name</span>
+        </div>
+        <input type="text"[(ngModel)]="personData.name" class="form-control" aria-label="Sizing example input"
+            aria-describedby="inputGroup-sizing-default">
+    </div>
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroup-sizing-default">Weight</span>
+        </div>
+        <input type="text" [(ngModel)]="personData.weight" class="form-control" aria-label="Sizing example input"
+            aria-describedby="inputGroup-sizing-default">
+    </div>
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroup-sizing-default">Height</span>
+        </div>
+        <input type="text" [(ngModel)]="personData.height" class="form-control" aria-label="Sizing example input"
+            aria-describedby="inputGroup-sizing-default">
+    </div>
+
+      <div class="text-center"> <button mdbBtn type="button" color="info" mdbWavesEffect  (click)="updatePerson()"> <mdb-icon far icon="save"></mdb-icon> Save</button>
+      </div>
+      
+    </div>
+  </div>
+

@@ -1,0 +1,30 @@
+.formperson{
+    background-color: #e0e0e0;
+}
+
+span{
+    width: 140px!important;
+}
+
+.hide {
+    visibility: hidden;
+}
+.show {
+    visibility: ''; 
+}
+.bmiText {
+    visibility: ''; 
+}
+.colHeight{
+    height: 120px!important;
+}
+
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }

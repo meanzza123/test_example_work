@@ -1,0 +1,41 @@
+<div class="container custom-container-2">
+  <!-- Show it when there is no person -->
+  <div class="no-data text-center" *ngIf="Person.length == 0">
+    <p>There is no person added yet!</p>
+    <button class="btn btn-outline-primary" routerLink="/person">Add Person</button>
+  </div>
+  <!-- Persons list table, it hides when there is no person -->
+  <div ng-repeat="person in persons">
+    <h3 class="mb-3 text-center">Persons List</h3>
+
+    <div class="col-md-12">
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Bmi</th>
+            <th scope="col">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let person of Person">
+            <td>{{person.name}}</td>
+            <td>{{person.bmi}}</td>
+            <td>
+              <button type="button" class="delete" mdbBtn color="warning" mdbWavesEffect
+                routerLink="/person-edit/{{person.id}}">
+                <mdb-icon fas icon="tools"></mdb-icon> Edit
+              </button>
+              <button type="button" class="edit" mdbBtn color="danger" mdbWavesEffect (click)="deletePerson(person.id)">
+                <mdb-icon fab icon="bitbucket"></mdb-icon> Delete
+              </button>
+
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+
+</div>

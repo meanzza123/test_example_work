@@ -1,0 +1,34 @@
+{
+  "persons": [
+    {
+      "id": 1,
+      "name": "aaa",
+      "weight": 80,
+      "height": 188,
+      "bmi": 22.63
+    },
+    {
+      "id": 2,
+      "name": "aab",
+      "weight": 100,
+      "height": 505,
+      "bmi": 3.92
+    },
+    {
+      "id": 3,
+      "name": "aac",
+      "weight": 90,
+      "height": 120,
+      "bmi": 62.5
+    },
+    {
+      "name": "asdas",
+      "height": 188,
+      "weight": 80,
+      "bmi": "22.63",
+      "textShow": "ปกติ",
+      "classColor": "green-text",
+      "id": 4
+    }
+  ]
+}
